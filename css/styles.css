@@ -20,6 +20,7 @@ body {
     --caption-color: #2F303A;
     --heading-color: #FFFFFF;
     --buttons-hover: #188CE8;
+    --icon-color: #AFB1B8;
 }
 /* button */
 .btn {
@@ -251,6 +252,34 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+.footer-icons-li {
+    fill: var(--heading-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+.footer-icons-li:hover {
+    background-color: var(--a-color);
+}
+.footer-name {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}                                   
+.footer-join {
+    padding-left: 516px;
+}
 
 .section {
     padding-top: 94px;
@@ -347,6 +376,31 @@ footer {
 .section-one {
     padding-bottom: 94px;
 }
+.clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+.clients-ul {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
+    
+}
+.clients-li {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-color);
+    align-items: center;
+}
+
 /* Portfolio */
 
 .btn-list {
@@ -374,4 +428,36 @@ img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.header-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.benefits-icon {
+    background-color: var(--bg-color);
+    padding-left: 100px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding-top: 25px;
+}
+.benefits-icon-div {
+    display: flex;
+    align-items: center;
+}
+.header-a {
+    display: flex;
+    align-items: center;
+}
+.team-li {
+
+    
+}
+.team-icons-ul {
+display: flex;
+width: 206px;
+height: 44px;
 }
