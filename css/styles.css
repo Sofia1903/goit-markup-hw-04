@@ -368,6 +368,14 @@ footer {
    
     
 }
+.container-flex {
+   display: flex;
+   
+}
+.footer-join {
+    padding-top: 12px;
+}
+
 
 .contacts-header {
     display: flex;
