@@ -1,16 +1,22 @@
-h1,h2,h3,p,ul {
-     margin: 0;
-     padding: 0;
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var( --body-color);
+    background-color: var(--body-color);
     color: var(--text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+
 :root {
     --body-color: #fff;
     --text-color: #757575;
@@ -22,6 +28,7 @@ body {
     --buttons-hover: #188CE8;
     --icon-color: #AFB1B8;
 }
+
 /* button */
 .btn {
     font-weight: 500;
@@ -39,14 +46,18 @@ body {
     padding-left: 22px;
     padding-right: 22px;
 }
+
 button {
     cursor: pointer;
 }
-button:hover, button:focus {
+
+button:hover,
+button:focus {
     background-color: var(--a-color);
     color: var(--heading-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .buttons {
     font-weight: 700;
     font-size: 16px;
@@ -64,22 +75,29 @@ button:hover, button:focus {
     border: none;
     border-radius: 4px;
 }
-.buttons:hover, .buttons:focus {
+
+.buttons:hover,
+.buttons:focus {
     background-color: var(--buttons-hover);
 }
+
 .btn:active {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .btn-list:last-child {
     padding-right: 0;
 }
+
 /* links */
 .caption {
     background-color: var(--caption-color);
 }
+
 .section-portfolio {
     background-color: var(--heading-color);
 }
+
 a {
     text-decoration: none;
     font-weight: 500;
@@ -89,10 +107,12 @@ a {
 }
 
 .contacts a {
-    color:  var(--text-color);
+    color: var(--text-color);
     font-style: normal;
 }
-.contacts a:hover, .contacts a:focus{
+
+.contacts a:hover,
+.contacts a:focus {
     color: var(--a-color);
 }
 
@@ -103,37 +123,47 @@ a {
     font-size: 26px;
     line-height: 1.1;
     margin: 0;
-    
+
 }
+
 .contacts-header a {
     color: var(--text-color);
     font-style: normal;
 }
-.contacts-header a:hover, .contacts-header a:focus {
+
+.contacts-header a:hover,
+.contacts-header a:focus {
     color: var(--a-color);
 }
 
 span {
     color: var(--a-color);
 }
+
 header {
     background-color: var(--heading-color);
 }
+
 .site-nav .link.current {
     color: var(--a-color);
 }
+
 .header-li {
     padding: 32px 0;
 }
-.site-nav a:hover, .site-nav a:focus {
-color: var(--a-color);
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--a-color);
 }
+
 .site-nav {
     display: flex;
     gap: 50px;
     align-items: center;
     margin-left: 93px;
 }
+
 /* text */
 .heading {
     color: var(--heading-color);
@@ -143,6 +173,7 @@ color: var(--a-color);
     text-align: center;
     margin-bottom: 50px;
 }
+
 h1 {
     font-weight: 900;
     font-size: 44px;
@@ -151,20 +182,24 @@ h1 {
     text-transform: uppercase;
     color: var(--title-color);
 }
+
 h2 {
     color: var(--title-color);
 }
+
 p {
     color: var(--title-color);
 }
+
 .team {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;   
+    line-height: 19px;
     color: var(--title-color);
     text-align: center;
     padding-top: 30px;
 }
+
 .paragraph {
     line-height: 1.1;
     color: var(--text-color);
@@ -172,6 +207,7 @@ p {
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
 .project-paragraphs {
     line-height: 1.8;
     color: var(--text-color);
@@ -182,9 +218,11 @@ p {
     border: 1px solid #EEEEEE;
     border-top: none;
 }
+
 ul {
     list-style: none;
 }
+
 .projects-names {
     font-weight: 700;
     font-size: 18px;
@@ -193,6 +231,7 @@ ul {
     color: var(--title-color);
     margin-bottom: 4px;
 }
+
 .benefits {
     font-weight: 700;
     line-height: 1.1;
@@ -201,6 +240,7 @@ ul {
     color: var(--title-color);
     margin-bottom: 10px;
 }
+
 .benefits-ul {
     display: flex;
     margin-left: auto;
@@ -208,7 +248,8 @@ ul {
     gap: 30px;
 }
 
-.work, .our-team {
+.work,
+.our-team {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -218,12 +259,14 @@ ul {
 
 /* footer */
 footer {
-    background-color: var( --caption-color);
-   
+    background-color: var(--caption-color);
+
 }
+
 .footer-li {
-  margin-bottom: 9px;
+    margin-bottom: 9px;
 }
+
 .studio-logo {
     color: var(--heading-color);
 }
@@ -240,6 +283,7 @@ footer {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .webstudio-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -248,6 +292,7 @@ footer {
     margin-bottom: 20px;
     display: block;
 }
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -255,7 +300,6 @@ footer {
 
 
 .footer-name {
-    font-style: normal;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -263,25 +307,25 @@ footer {
     letter-spacing: 0.03em;
     color: var(--heading-color);
     margin-bottom: 20px;
-}                                   
+}
 
 
 .footer-svg {
     fill: var(--heading-color);
     padding-left: 12px;
     padding-top: 12px;
-    
+
 }
+
 .footer-icons-li {
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    
+
 }
-.footer-icons-li:hover {
-    background-color: var(--a-color);
-}
+
+
 .footer-icons-ul {
     display: flex;
     gap: 10px;
@@ -297,12 +341,14 @@ footer {
     display: flex;
     align-items: center;
 }
+
 .container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 }
+
 .header-class {
     border-bottom: 1px solid #ECECEC;
 }
@@ -321,6 +367,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
 }
+
 .benefits-list {
     display: inline-block;
     width: 270px;
@@ -333,14 +380,17 @@ footer {
     font-size: 36px;
     line-height: 1.1;
 }
+
 .work-list {
     margin: 0;
     display: inline-block;
 }
+
 .work-ul {
-   gap: 30px;
+    gap: 30px;
     display: flex;
 }
+
 .our-team {
     text-align: center;
     margin-bottom: 50px;
@@ -351,6 +401,7 @@ footer {
     display: flex;
     margin-bottom: 0;
 }
+
 .team-list {
     margin: 0;
     background-color: var(--heading-color);
@@ -362,6 +413,7 @@ footer {
 .footer-li:last-child {
     margin-bottom: 0;
 }
+
 .footer-adress {
     color: var(--heading-color);
     font-weight: 400;
@@ -369,18 +421,20 @@ footer {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+
 .nav-list {
     display: flex;
     align-items: center;
-   
-    
+
+
 }
+
 .container-flex {
-   display: flex;
-   
+    display: flex;
+    align-items: baseline;
 }
+
 .footer-join {
-    padding-top: 12px;
     margin-left: 70px;
 }
 
@@ -391,14 +445,17 @@ footer {
     margin-left: auto;
     align-items: center;
 }
-.section-team  {
+
+.section-team {
     background-color: var(--bg-color);
     padding-bottom: 94px;
     padding-top: 94px;
 }
+
 .section-one {
     padding-bottom: 94px;
 }
+
 .clients {
     font-weight: 700;
     font-size: 36px;
@@ -422,16 +479,16 @@ footer {
     flex-basis: calc((100% - 2 * 30px) / 3);
     background-color: var(--heading-color);
 }
-.cards:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-}
+
+
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 94px;
 }
+
 .btn-ul {
     margin-left: auto;
     margin-bottom: 50px;
@@ -458,18 +515,18 @@ img {
     border-radius: 4px;
     padding-top: 25px;
 }
+
 .benefits-icon-div {
     display: flex;
     align-items: center;
 }
+
 .header-a {
     display: flex;
     align-items: center;
 }
-.team-li {
 
-    
-}
+.team-li {}
 
 
 .clients-li {
@@ -483,33 +540,50 @@ img {
     width: 170px;
     height: 92px;
 }
-.clients-li:hover {
-   border-color: var(--a-color);
+
+.clients-li a:hover {
+    border-color: var(--a-color);
 }
+
 .clients-ul {
     display: flex;
     gap: 30px;
     padding-bottom: 94px;
-    
+
 }
 
 .team-icons-ul {
     display: flex;
-    width: 206px;
-    height: 44px;
     gap: 10px;
-    padding-left: 32px;
     margin-bottom: 30px;
+    justify-content: center;
 }
+
 .team-svg {
     fill: #AFB1B8;
     padding-left: 12px;
     padding-top: 12px;
 }
+
 .team-svg:hover {
-        fill: #FFFFFF;
+    fill: #FFFFFF;
 }
-.team-icons-li:hover {
+
+
+
+/* link homework 4 */
+.projects a:hover, .projects a:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+.footer-icons-li a:hover {
+    background-color: var(--a-color);
+}
+.clients-li a:hover {
+    border-color: var(--a-color);
+}
+.team-icons-li a:hover {
     background-color: #2196F3;
     border-radius: 50%;
 }
