@@ -362,6 +362,13 @@ footer {
 .footer-li:last-child {
     margin-bottom: 0;
 }
+.footer-adress {
+    color: var(--heading-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
 .nav-list {
     display: flex;
     align-items: center;
@@ -374,6 +381,7 @@ footer {
 }
 .footer-join {
     padding-top: 12px;
+    margin-left: 70px;
 }
 
 
@@ -490,4 +498,18 @@ img {
     width: 206px;
     height: 44px;
     gap: 10px;
+    padding-left: 32px;
+    margin-bottom: 30px;
+}
+.team-svg {
+    fill: #AFB1B8;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.team-svg:hover {
+        fill: #FFFFFF;
+}
+.team-icons-li:hover {
+    background-color: #2196F3;
+    border-radius: 50%;
 }
