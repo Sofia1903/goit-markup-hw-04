@@ -100,10 +100,8 @@ button:focus {
 
 a {
     text-decoration: none;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
+    
+    color: var(--title-color); 
 }
 
 .contacts a {
@@ -150,6 +148,9 @@ header {
 
 .header-li {
     padding: 32px 0;
+    font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
 }
 
 .site-nav a:hover,
@@ -194,9 +195,10 @@ p {
 .team {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: var(--title-color);
+    line-height: 1.1;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
     padding-top: 30px;
 }
 
@@ -239,6 +241,7 @@ ul {
     text-transform: uppercase;
     color: var(--title-color);
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .benefits-ul {
@@ -265,6 +268,10 @@ footer {
 
 .footer-li {
     margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
 .studio-logo {
@@ -314,15 +321,16 @@ footer {
     fill: var(--heading-color);
     padding-left: 12px;
     padding-top: 12px;
+    width: 44px;
+    height: 44px;
 
 }
 
 .footer-icons-li {
-    background-color: rgba(255, 255, 255, 0.1);
+    
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-
+    display: flex;
 }
 
 
@@ -445,6 +453,12 @@ footer {
     margin-left: auto;
     align-items: center;
 }
+.contacts-li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
 
 .section-team {
     background-color: var(--bg-color);
@@ -459,10 +473,9 @@ footer {
 .clients {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1px;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -507,49 +520,23 @@ img {
 }
 
 .benefits-icon {
-    background-color: var(--bg-color);
-    padding-left: 100px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    padding-top: 25px;
+    width: 70px;
+    height: 70px;
 }
 
 .benefits-icon-div {
     display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 120px; 
     align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 4px;
 }
 
 .header-a {
     display: flex;
     align-items: center;
-}
-
-.team-li {}
-
-
-.clients-li {
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-bottom: 16px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    align-items: center;
-    fill: var(--icon-color);
-    width: 170px;
-    height: 92px;
-}
-
-.clients-li a:hover {
-    border-color: var(--a-color);
-}
-
-.clients-ul {
-    display: flex;
-    gap: 30px;
-    padding-bottom: 94px;
-
 }
 
 .team-icons-ul {
@@ -559,31 +546,66 @@ img {
     justify-content: center;
 }
 
-.team-svg {
-    fill: #AFB1B8;
-    padding-left: 12px;
-    padding-top: 12px;
-}
-
-.team-svg:hover {
-    fill: #FFFFFF;
-}
-
-
 
 /* link homework 4 */
-.projects a:hover, .projects a:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+
+
+
+.team-icons-li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    
 }
 
-.footer-icons-li a:hover {
+.clients-ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients-link {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-color);
+}
+.clients-link:hover {
+    fill: var(--a-color);
+    border: 1px solid var(--a-color);
+    border-radius: 4px;
+    
+}
+.team-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    fill: var(--icon-color);
+}
+.team-a:hover {
     background-color: var(--a-color);
-}
-.clients-li a:hover {
-    border-color: var(--a-color);
-}
-.team-icons-li a:hover {
-    background-color: #2196F3;
     border-radius: 50%;
+    fill: var(--heading-color);
+}
+.cards-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    display: inline-block;
+   
+}
+.footer-join-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+ 
+ 
+}
+.footer-join-link:hover {
+   background-color: var(--a-color);
+   border-radius: 50%;
 }
